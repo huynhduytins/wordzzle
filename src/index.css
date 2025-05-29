@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: oklch(75% 0.18 285);
+  --color-base: oklch(98.5% 0.005 240);
+  --color-elevated: oklch(96% 0.01 240);
+  --color-border: oklch(70% 0.01 240 / 10%);
+  --color-text: oklch(25% 0.01 240);
+  --color-primary: oklch(62% 0.24 278);
+  --color-accent: oklch(75% 0.18 200);
+  --color-subtle: oklch(45% 0.02 240);
+  --color-code: oklch(20% 0.1 260);
+
+  --font-serif: "EB Garamond", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+}
+
+@layer utilities {
+  .cursor-custom {
+    cursor: url("./../public/normal-cursor-small.png"), auto;
+  }
+}
