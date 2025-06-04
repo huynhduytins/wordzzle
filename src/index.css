@@ -16,7 +16,11 @@
 }
 
 @layer utilities {
-  .cursor-custom {
+  .cursor-normal-custom {
     cursor: url("./../public/normal-cursor-small.png"), auto;
+  }
+
+  .cursor-active-custom {
+    cursor: url("./../public/active-cursor-small.png"), auto;
   }
 }
