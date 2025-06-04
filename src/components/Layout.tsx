@@ -7,23 +7,23 @@ export default function Layout({ children }: React.PropsWithChildren) {
         </div>
       </div>
       <footer className="px-5 py-2">
-        <p className="text-sm text-center text-primary/40">
+        <p className="text-sm text-center text-text">
           <a
-            href="https://github.com/monodyle/scramble"
+            href="https://github.com/huynhduytins/wordzzle"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            scramble game
+            wordzzle
           </a>{' '}
           by{' '}
           <a
-            href="https://github.com/monodyle"
+            href="https://github.com/huynhduytins"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            monodyle
+            hduytins
           </a>
         </p>
       </footer>
