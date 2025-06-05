@@ -2,7 +2,7 @@ import { MODES } from "@constants";
 import ModeOption from "./ModeOption";
 import Name from "./Name";
 
-export default function Intro() {
+export default function GameStart() {
   return (
     <>
       <div className="mb-16">

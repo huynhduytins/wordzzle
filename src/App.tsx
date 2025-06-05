@@ -1,9 +1,9 @@
-import Intro from "@components/Intro";
+import GameStart from "@components/GameStart";
 
 const App = () => {
   return (
     <>
-      <Intro />
+      <GameStart />
     </>
   );
 };
