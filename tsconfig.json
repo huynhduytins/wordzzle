@@ -21,7 +21,8 @@
 
     "paths": {
       "@components/*": ["./src/components/*"],
-      "@constants": ["./src/constants/index"]
+      "@constants": ["./src/constants/index"],
+      "@types": ["./src/types/index"]
     }
   },
   "include": ["src"]

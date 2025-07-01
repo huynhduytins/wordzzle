@@ -1,16 +1,24 @@
 import GameStart from "@components/GameStart";
-import { GameContext } from "./context";
-import { useContext } from "react";
+import { GameContext, GameStatus } from "./context";
+import { useState } from "react";
 import GamePlay from "@components/GamePlay";
 import GameOver from "@components/GameOver";
 
 const App = () => {
-  const gameStatus = useContext(GameContext);
+  const [gameStatus, setGameStatus] = useState<GameStatus>("intro");
 
   return (
     <GameContext value={gameStatus}>
-      {gameStatus === "intro" && <GameStart />}
-      {gameStatus === "play" && <GamePlay />}
+      {gameStatus === "intro" && (
+        <GameStart
+          onSetGameStatus={(status: GameStatus) => {
+            setGameStatus(status);
+          }}
+        />
+      )}
+      {!["intro", "over"].includes(gameStatus) && (
+        <GamePlay mode={gameStatus} />
+      )}
       {gameStatus === "over" && <GameOver />}
     </GameContext>
   );

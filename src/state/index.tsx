@@ -1,5 +1,3 @@
 import { GameMode } from "../utils";
 
-export function useSetGameMode(mode: GameMode) {
-    
-}
+export function useSetGameMode(mode: GameMode) {}

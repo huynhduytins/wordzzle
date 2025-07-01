@@ -35,7 +35,7 @@ export function getModeLabel(mode: GameMode) {
 export function getModeDescription(mode: GameMode) {
   switch (mode) {
     case "chill":
-      return "Chill out, have fun, and build your vocabulary";
+      return "Chill out, have fun and build your vocabulary";
     case "strike":
       return "You have just 3 lives to guess the words - use them wisely!";
     case "rush":
